@@ -5,32 +5,35 @@
   }
   
   .wrapper {
-    display: flex;
     height: 100vh;
-    width: 600px;
-    height: 400px;
+    width: 300px;
+    height: 270px;
     margin: 10px auto;
   }
 
   .wrapper2 {
     display: flex;
     height: 100vh;
-    width: 1200px;
-    height: 800px;
+    width: 600px;
+    height: 420px;
     margin: 10px auto;
   }
   
   .left,
   .right {
     flex: 1 1 auto;
-    border: 1px solid dimgray;
-    max-width: 50%;
+    max-width: 100%;
   }
   
   .left {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: crosshair;
+  }
+
+  .left:hover{
+    border: 1px solid dimgray;
   }
   
   .left > img {
@@ -42,6 +45,8 @@
   .right {
     position: relative;
     overflow: hidden;
+    max-width: 100%;
+    border: 1px solid dimgray;
   }
   
   .inner {
