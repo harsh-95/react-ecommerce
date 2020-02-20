@@ -1,0 +1,83 @@
+body{
+  font-family: 'Varela Round', sans-serif;
+}
+
+ul{
+  float: left;
+  position: absolute;
+  margin-left: 100px;
+}
+
+ul li{
+  display: inline;
+  padding: inherit;
+}
+
+.title{
+  padding: 50px 20px 20px;
+  font-weight: 600;
+}
+
+.navbar{
+  background-color: #222;
+}
+
+button.my-cart{
+  border: 0;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.img-container{
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container .card-img-top:hover{
+  transform: scale(1.2);
+}
+
+.card-img-top{
+  transition: all 0.4s linear;
+}
+
+.cart-btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(100%,100%);
+  transition: all 0.2s linear;
+  border: 0;
+  border-radius: 5px 0px 0px 0px;
+  padding: 5px 13px;
+  background-color: #03fc7f;
+}
+
+.cart-btn:hover{
+  cursor: pointer;
+}
+
+.img-container:hover .cart-btn{
+  transform: translate(0,0);
+}
+
+.modalContainer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal{
+  background: white;
+}
+
+.cart-icon{
+  cursor: pointer;
+}
